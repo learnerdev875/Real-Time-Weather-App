@@ -42,7 +42,7 @@ function DisplayWeather({location}) {
     },[lang,lat])
 
     useEffect(()=>{
-        Axios.get(`https://api.weatherapi.com/v1/current.json?key=8701baaeb32242d79f762639222310&q=${location}&aqi=no`)
+        Axios.get(`https://api.weatherapi.com/v1/current.json?key=d9a06540094f4e1296155847221111&q=${location}&aqi=no`)
         .then(response =>{
             const {localtime,name,country} = response.data.location;
             const {condition,feelslike_c,wind_kph} = response.data.current;
